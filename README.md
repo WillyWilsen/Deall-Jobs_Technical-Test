@@ -3,21 +3,36 @@
 ## Structure
 
 ├── README.md
+
 ├── config.json
+
 ├── database
+
 │   └── database.go
+
 ├── db.sql
+
 ├── go.mod
+
 ├── go.sum
+
 ├── handler
+
 │   └── auth.go
+
 ├── model
+
 │   └── user.go
+
 ├── repository
+
 │   └── auth.go
+
 ├── server.go
+
 └── utility
-    └── utility.go
+
+│   └── utility.go
 
 - `config.json`: A configuration file that holds various configuration settings for the service, such as HTTP port and database connection details.
 - `database`: A directory that contains the database-related code and files.
@@ -45,16 +60,22 @@ Before running the service, make sure you have the following prerequisites insta
 ### Installation
 
 1. Clone the repository
->git clone https://github.com/WillyWilsen/Deall-Jobs_Technical-Test.git
+```
+git clone https://github.com/WillyWilsen/Deall-Jobs_Technical-Test.git
+```
 2. Install the required dependencies
->go mod download
+```
+go mod download
+```
 3. Update the `config.json` file with your HTTP port and database connection details
 4. Run the `db.sql` to your MySQL database to set up the initial database tables
 
 ### Usage
 
 To start the service, run the following command
->go run server.go
+```
+go run server.go
+```
 
 You can access it via `http://localhost:{http_port}`. Replace the `http_port` with your HTTP port in `config.json`
 
